@@ -1,32 +1,28 @@
-/* Importação (Google Fonts) */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-/* CSS Reset */
 * {
-  margin: 0;
-  border: 0;
-  padding: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
 }
 
-/* Variáveis de Cores */
 :root {
-  --card-bg-color: #e8e8e8;
-  --card-border-color: #a1a1a1;
-  --card-text-color: #434343;
+    --card-bg-color: #e8e8e8;
+    --card-border-color: #a1a1a1;
+    --card-text-color: #434343;
 }
 
-/* Layout */
 .Container {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .Flex,
@@ -35,553 +31,615 @@ body {
 .Flex4,
 .Flex5,
 .Flex6 {
-  display: flex;
+    display: flex;
 }
 
 .Flex {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .Flex2 {
-  align-items: center;
+    align-items: center;
 }
 
 .Flex3,
 .Flex6 {
-  flex-direction: column;
-  align-items: center;
-  color: #000;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
 }
 
 .Flex4 {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Flex5 {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
 }
 
 .Flex6 {
-  justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Botão */
 .Botao {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 700;
-  background-color: #c00000;
-  padding: 10px 40px;
-  border: 2px solid #fff;
-  border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
 }
 
-/* topo do site */
 #topo {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 100%;
-  text-align: right;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 100%;
+    text-align: right;
 }
 
-/* Estilo para a imagem do botão 'Voltar ao Topo' */
 #topo img {
-  width: 55px; /* Define uma largura fixa */
-  height: 55px; /* Define uma altura fixa */
+    width: 55px;
+    height: 55px;
 }
 
-/* Cartões */
 .Card {
-  margin-top: 25px;
-  width: 338px;
-  height: 520px;
-  background-color: #50504e8c;
-  border: 1px solid var(--card-border-color);
-  border-radius: 25px;
-  text-align: center;
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #50504e8c;
+    border: 1px solid var(--card-border-color);
+    border-radius: 25px;
+    text-align: center;
 }
 
 .Card img {
-  border-radius: 25px 25px 0px 0px;
-  margin-top: 10px;
-  width: 35%; 
-  height: auto; 
-
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 10px;
+    width: 35%;
+    height: auto;
 }
 
 .Card h3 {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .Card p {
-  text-align: center;
-  color: var(--card-text-color);
-  padding: 10px 30px 50px 30px;
+    text-align: center;
+    color: var(--card-text-color);
+    padding: 10px 30px 50px 30px;
 }
 
 .Card a {
-  padding: 10px 100px;
-  border: 0;
+    padding: 10px 100px;
+    border: 0;
 }
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-/* Cabeçalho */
 header {
-  height: 60px;
+    height: 60px;
 }
 
 #logo img {
-  height: 50px; /* Reduz a altura para caber no cabeçalho de 60px */
-  width: auto; /* Deixa a largura se ajustar para não distorcer a imagem */
-  margin-top: 5px; /* Centraliza a imagem no espaço do cabeçalho */
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
 }
 
 #check {
-  display: none;
+    display: none;
 }
 
 label {
-  font-size: 3em;
-  position: fixed;
-  top: 5px;
-  right: 15px;
-  color: rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-  list-style: none;
-  background-color: rgba(52, 53, 56, 0.95);
-  height: 100vh;
-  position: fixed;
-  top: 60px;
-  right: -65%;
-  width: 65%;
-  transition: all 0.5s;
+    list-style: none;
+    background-color: rgba(52, 53, 56, 0.95);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -65%;
+    width: 65%;
+    transition: all 0.5s;
 }
 
 #check:checked~ul {
-  right: 0;
+    right: 0;
 }
 
 nav ul li {
-  padding: 20px;
-  border-bottom: 1px solid #a9a9a9;
-  text-align: right;
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+    text-align: right;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
-/* Destaque */
 main {
-  height: 51vh;
-  background: url(img/back.png);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    height: 51vh;
+    background: url(img/back.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 main h1 {
-  font-size: 3.1em;
-  text-shadow: #000 0.05em 0.05em 0.05em;
+    font-size: 3.1em;
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 main h2 {
-  font-size: 1.25em;
-  margin-bottom: 40px;
-  text-shadow: 0px 5px 10px #000,
-    0px 10px 10px rgba(0, 0, 0, 0.15),
-    0px 15px 15px rgba(0, 0, 0, 0.1),
-    0px 20px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    text-shadow: 0px 5px 10px #000,
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Sobre */
 #sobre {
-  padding: 50px 0px;
-  background: url(img/background.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
 #destaqueSobre {
-  display: none;
+    display: none;
 }
 
 #textoSobre {
-  color: #fff;
-  padding: 0px 10px;
+    color: #fff;
+    padding: 0px 10px;
 }
 
 #textoSobre h2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .TopicosSobre {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .ListaSobre {
-  list-style: none;
+    list-style: none;
 }
 
 .TopicosSobre img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
-/* One page */
 #onepage {
-  padding: 50px 10px;
+    padding: 50px 10px;
 }
 
 #onepage h2 {
-  color: #fff;
-  margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 #onepage p {
-  color: #fff;
-  margin-bottom: 25px;
+    color: #fff;
+    margin-bottom: 25px;
 }
 
 .logP {
-  width: 250px;
-  height: auto; /* Mantém a proporção da imagem */
+    width: 250px;
+    height: auto;
 }
 
 #video iframe {
-  width: 340px;
-  height: 191px;
-  border: 0;
+    width: 340px;
+    height: 191px;
+    border: 0;
 }
 
-/* Wireframe */
 #onepage {
-  padding: 30px 0px;
-  background-color: #000;
-  \\background: url(img/onepage.png);
-  background-size: cover;
-  background-position: center;
+    padding: 30px 0px;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
 }
 
 #textoWire {
-  color: #fff;
-  padding: 0px 10px;
+    color: #fff;
+    padding: 0px 10px;
 }
 
 #textoWire h2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #textoWire p {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 #textoWire span {
-  display: none;
+    display: none;
 }
 
 #qrcode {
-  display: none;
+    display: none;
 }
 
-/* Conteúdo */
 #tecnologia {
-  padding: 50px 0px;
+    padding: 50px 0px;
 }
 
 #tecnologia h2 {
-  margin-bottom: 25px;
-  text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 #todos {
-  margin-top: 50px;
-  text-align: center;
+    margin-top: 50px;
+    text-align: center;
 }
 
 #todos a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.25em;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
-/* Rodapé */
 address {
-  padding: 35px 10px 50px 10px;
-  background-color: #000;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+    padding: 35px 10px 50px 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
 }
 
 address a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-address h2{
-  text-align: center;
-  color: #fff;
-  margin-bottom: 25px;
+address a:hover {
+    color: #007bff;
 }
 
-/* Estilos para os links de contato no rodapé (WhatsApp, Fone, E-mail) */
-.contato-link {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espaço entre o ícone e o texto */
-  margin-bottom: 15px; /* Espaçamento entre os itens de contato */
+address h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 35px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Define o tamanho dos ícones de contato. Altere o valor aqui! */
-.contato-icon {
-  width: 32px;
-  height: 32px;
+.Flex6 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Remove a margem do parágrafo dentro do link de contato */
-.contato-link p {
-  margin: 0;
+.Container.Flex6 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff; /* Garante que o texto dentro destas divs seja branco */
 }
 
-#iconeLocal {
-  display: none;
+#contato a,
+address .Container.Flex6 > div:nth-child(2) a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
-#dados {
-  margin: 30px 0px 15px 0px;
+.whatsapp,
+.email {
+    width: 45px;
+    height: 45px;
 }
 
-#googleMaps {
-  display: none;
+.Container.Flex6 > div:nth-child(3) p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
 }
 
-footer {
-  padding: 50px 0px;
-  background-color: #000;
-  font-size: 0.875em;
-  color: #fff;
-  text-align: center;
+.Container.Flex6 > div:nth-child(3) p a {
+    color: #fff;
+    text-decoration: none;
 }
 
-footer a {
-  text-decoration: none;
-  color: #fff;
+.Container.Flex6 > div:nth-child(3) p a:hover {
+    text-decoration: underline;
 }
 
 #social {
-  margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 
-/* Define o tamanho dos ícones de redes sociais */
 #social img {
-  width: 30px;  
-  height: 30px; 
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
 }
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#social img:hover {
+    transform: scale(1.1);
+}
+
 @media (min-width: 576px) {
+    .Container {
+        max-width: 540px;
+    }
 
-  /* Layout */
-  .Container {
-    max-width: 540px;
-  }
+    main {
+        height: 77vh;
+    }
 
-  /* Destaque */
-  main {
-    height: 77vh;
-  }
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
 
-  /* One page */
-  #video iframe {
-    width: 560px;
-    height: 315px;
-  }
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-  /* Rodapé */
-  .Flex5 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #social {
-    margin: 0;
-  }
+    #social {
+        margin: 0;
+    }
 }
 
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
+    .Container {
+        max-width: 720px;
+    }
 
-  /* Layout */
-  .Container {
-    max-width: 720px;
-  }
+    main {
+        height: 50vh;
+    }
 
-  /* Destaque */
-  main {
-    height: 50vh;
-  }
+    main h1 {
+        font-size: 5.8em;
+    }
 
-  main h1 {
-    font-size: 5.8em;
-  }
+    main h2 {
+        font-size: 2.3em;
+    }
 
-  main h2 {
-    font-size: 2.3em;
-  }
+    .Flex6 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .Container.Flex6 > div {
+        flex-basis: auto;
+        flex-grow: 0;
+        min-width: 200px;
+        color: #fff;
+    }
+
+    .Container.Flex6 > div:nth-child(3),
+    .Container.Flex6 > div:nth-child(4) {
+        flex-basis: 100%;
+        order: 3;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        color: #fff;
+    }
+
+    .Container.Flex6 > div:nth-child(3) {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #social {
+        order: 4;
+        width: 100%;
+        margin-top: 15px;
+    }
 }
 
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-
-  /* Layout */
-  .Container {
-    max-width: 960px;
-  } 
+    .Container {
+        max-width: 960px;
+    }
 }
 
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+    .Container {
+        max-width: 1140px;
+    }
 
-  /* Layout */
-  .Container {
-    max-width: 1140px;
-  }
+    header {
+        height: 135px;
+    }
 
-  /* Cabeçalho */
-  header {
-    height: 135px;
-  }
+    #logo img {
+        width: 450px;
+        height: 300px;
+        margin-top: 20px;
+    }
 
-  #logo img {
-    width: 450px;
-    height: 300px;
-    margin-top: 20px;
-  }
+    label {
+        display: none;
+    }
 
-  label {
-    display: none;
-  }
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 40px;
+    }
 
-  nav ul {
-    position: static;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    margin-top: 40px;
-  }
+    nav ul li {
+        float: left;
+        border: 0;
+    }
 
-  nav ul li {
-    float: left;
-    border: 0;
-  }
+    nav ul li a {
+        color: #343538;
+    }
 
-  nav ul li a {
-    color: #343538;
-  }
+    nav ul li a:hover {
+        color: #c00000;
+    }
 
-  nav ul li a:hover {
-    color: #c00000;
-  }
+    main {
+        height: 60vh;
+    }
 
-  /* Destaque */
-  main {
-    height: 60vh;
-  }
+    main h1 {
+        font-size: 6.8em;
+    }
 
-  main h1 {
-    font-size: 6.8em;
-  }
+    #sobre {
+        background-attachment: fixed;
+    }
 
-  /* Sobre */
-  #sobre {
-    background-attachment: fixed;
-  }
+    #destaqueSobre {
+        display: block;
+        margin-right: 50px;
+    }
 
-  #destaqueSobre {
-    display: block; 
-    margin-right: 50px;
-  }
+    #destaqueSobre img {
+        width: 350px;
+    }
 
-  #destaqueSobre img {
-    width: 350px;
-  }
+    #textoSobre {
+        text-align: left;
+        color: #000;
+    }
 
-  #textoSobre {
-    text-align: left;
-    color: #000; /* Alinha o texto à esquerda */
-  }
+    #tecnologia {
+        background-attachment: fixed;
+    }
 
-  /* Tecnologia */
-  #tecnologia {
-    text-align: center;
-    background-attachment: fixed;
-  }
+    #destaqueTecnologia {
+        display: inline;
+    }
 
-  #destaqueTecnologia {
-    display: inline;
-  }
+    #destaqueTecnologia img {
+        border-radius: 50%;
+        margin-right: 50px;
+    }
 
-  #destaqueTecnologia img {
-    border-radius: 50%;
-    margin-right: 50px;
-  }
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-  /* One page */
-  .Flex3 {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Empurra o texto para a esquerda e a imagem para a direita */
-  }
+    #logoPrincipal {
+        flex-shrink: 0;
+    }
 
-  #logoPrincipal {
-    /* A margem foi removida, o Flexbox agora controla o espaçamento */
-    flex-shrink: 0; /* Impede que a imagem encolha ou seja espremida */
-  }
+    .logP {
+        width: 600px;
+    }
 
-  /* Aumenta a logo apenas em telas grandes */
-  .logP { 
-    width: 600px; /* Tamanho ajustado para dar mais espaço ao texto. A margem foi removida. */
-  }
+    #wireframe {
+        background-attachment: fixed;
+    }
 
-  /* Wireframe */
-  #wireframe {
-    background-attachment: fixed;
-  }
+    #wireframe span {
+        display: inline;
+    }
 
-  #wireframe span {
-    display: inline;
-  }
+    .Flex6 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
 
-  /* Rodapé */
-  .Flex6 {
-    flex-direction: row-reverse;
-  }
+    .Container.Flex6 > div:nth-child(1),
+    .Container.Flex6 > div:nth-child(2) {
+        flex-basis: auto;
+        flex-grow: 0;
+        margin: 0;
+        order: 1;
+    }
 
-img.email{
-  width: 30px;
-  height: 30px;
-}
+    .Container.Flex6 > div:nth-child(3),
+    .Container.Flex6 > div:nth-child(4) {
+        flex-basis: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+        color: #fff;
+    }
 
-img.whatsapp{
-  width: 30px;
-  height: 30px;
-}
+    .Container.Flex6 > div:nth-child(3) p {
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 0;
+        color: #fff;
+    }
 
-#contato a p{
-  color: #fff;
-}
+    #social {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    img.email {
+        width: 30px;
+        height: 30px;
+    }
+
+    img.whatsapp {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contato a p {
+        color: #fff;
+    }
 }
